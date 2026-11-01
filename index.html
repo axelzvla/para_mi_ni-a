@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi niña ❤️</title>
+
+<style>
+    .reproductor {
+  background: rgba(180, 91, 173, 0.93)
+  color: #a52b69;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 50px auto;
+  max-width: 450px;
+  box-shadow: 0 5px 20px #0002;
+}
+
+.reproductor audio {
+  width: 100%;
+  margin-top: 15px;
+}
+body {
+  margin: 0;
+
+  background-color: #000000;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.12),
+      rgba(0, 0, 0, 0.12)
+    ),
+    url("corazones.jpg");
+
+  background-size: 430px auto;
+  background-repeat: repeat;
+  background-position: center top;
+  background-attachment: fixed;
+
+  color: #ffffff;
+  font-family: Georgia, serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+.pantalla {
+  min-height: 100vh;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #8b82ff;
+  font-size: 90px;
+}
+h2 {
+  color: white;
+  font-size: 40px;
+}
+
+button {
+  background: #ec7de7fd;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 30px 40px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+#segunda {
+  display: none;
+}
+
+.contenedor {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.foto {
+  background: rgb(189, 82, 183);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px #0001;
+}
+
+.foto img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carta {
+  background: blue;
+  border-radius: 25px;
+  padding: 25px;
+  margin-top: 30px;
+  line-height: 1.8;
+}
+
+@media(max-width: 450px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+
+<!-- PRIMER APARTADO -->
+<section id="primera" class="pantalla">
+  <h1>Para mi niña </h1>
+
+  <p>
+    Un pequeño detalle para la chica que mas amo.
+  </p>
+
+  <button onclick="abrirSorpresa()">
+    Presioname jsjs
+  </button>
+</section>
+
+
+<!-- SEGUNDO APARTADO -->
+<section id="segunda" class="pantalla">
+
+  <div class="contenedor">
+
+    <h2>Nunca dudes del gran amor que te tengo.</h2>
+
+    <p>
+      Todo lo que me gusta de ti.
+    </p>
+
+    <!-- GALERÍA DE FOTOS -->
+    <div class="galeria">
+
+      <div class="foto">
+        <img src="foto1.jpg" alt="Nuestro recuerdo 1">
+        <p>Ahora te veo en todas partes y lograste que amara 1 color ❤️</p>
+      </div>
+
+      <div class="foto">
+        <img src="foto2.jpg" alt="Nuestro recuerdo 2">
+        <p>La cancion que ahora me hace sentir que contigo puedo amar de nuevo 💕</p>
+      </div>
+
+      <div class="foto">
+        <img src="foto3.jpg" alt="Nuestro recuerdo 3">
+        <p>Ahora esta es tu cancion, me hace pensar en ti ya que voy a amarte HASTA LA MUERTE</p>
+      </div>
+<div class="reproductor">
+<h2>Esta es la cancion jsjs 💗</h2>
+
+  <p>Para ti.</p>
+
+  <audio id="miCancion" controls loop>
+    <source src="cancion1.mp3" type="audio/mpeg">
+    Tu navegador no puede reproducir este audio.
+  </audio>
+</div>
+      <div class="foto">
+        <img src="foto4.jpg" alt="Nuestro recuerdo 4">
+        <p>Y tus ojos que me facinan, el como miras, como parpadeas y el como brillan cuando te emocionas.</p>
+      </div>
+
+    </div>
+
+    <!-- CARTA -->
+    <div class="carta">
+      <h2>Si un dia dudas que no te amo lee esto.</h2>
+
+      <p>
+        No hay un solo dia en el que no piense en ti, eres lo primero en lo que pienso al despertar y lo ultimo en lo que pienso al
+        dormir, bueno tampoco porque ahora tambien estas en mis sueños. Haces que las pesadillas se vayan y que las voces se callen,
+        gracias a ti soy un hombre feliz y puedo arriesgarme a querer una vida a tu lado. Por eso ahora soy tu BOY IN LUV.
+      </p>
+
+      <h2 style="color:#c62843">
+        Te Amooooo ❤️
+      </h2>
+    </div>
+
+    <br>
+
+    <button onclick="volverInicio()">
+      Regresar jsjs :)
+    </button>
+
+  </div>
+</section>
+
+
+<script>
+function abrirSorpresa() {
+  document.getElementById("primera").style.display = "none";
+  document.getElementById("segunda").style.display = "block";
+  window.scrollTo(0, 0);
+}
+
+function volverInicio() {
+  document.getElementById("segunda").style.display = "none";
+  document.getElementById("primera").style.display = "block";
+  window.scrollTo(0, 0);
+}
+</script>
+
+</body>
+</html>
